@@ -17,6 +17,12 @@ For all data calls, the time period allowed depends upon the granularity chosen.
 
 [Field parameters](#field-parameters) describe additional query parameters that need to be provided in a `data` call in order to function properly. For example, in order to make a request for Modeled AC Power, the `data` request must use the field parameters provided in the `dataavailable` response. Based on the field parameters returned, an example data call could be: `GET /data?fields=W_m_avg&start=2015-08-01T00:00:00&end=2015-08-02T00:00:00&tz=US/Pacific&gran=5min&modelType=singleDiode&irradianceSource=TMY&inverterClipping=true`.
 
+Depending upon the entity, available field parameters are explained below. All options for the field parameters are dictated by the results of the `dataavailable` call.
+
+* modelType: there are two possible options for modelType -- singleDiode and simple. The single diode model is a PV model that represents the physics of a PV cell. A detailed explanation can be found [here](https://pvpmc.sandia.gov/modeling-steps/2-dc-module-iv/diode-equivalent-circuit-models/). The simple model is based on PVWatts which is best explained [here](https://pvpmc.sandia.gov/modeling-steps/2-dc-module-iv/point-value-models/pvwatts/).
+* irradianceSource: possible irradiance sources include TMY3 and weatherStation. [TMY3 data](http://rredc.nrel.gov/solar/old_data/nsrdb/1991-2005/tmy3/) is taken from the nearest TMY3 station to the geolocated address of the entity being modeled. Weather station data is obtained from a weather station in the site hierarchy in SolarOS.
+* inverterClipping: boolean toggle to determine whether the PV model should clip at the inverter maximum output power.
+
 ## Data object
 
 ```json
