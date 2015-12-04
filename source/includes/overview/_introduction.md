@@ -12,4 +12,4 @@ The API provides programmatic access to much of the data found in SolarOS. It de
 
 Data is returned in [JSON](http://en.wikipedia.org/wiki/JSON).
 
-The source of this documentation is [available publicly on Github](https://github.com/LocusEnergy/api-docs). Feel free to contribute by submitting a pull request or [logging an issue](https://github.com/LocusEnergy/api-docs/issues/new).
+The source of this documentation is [available publicly on Github](https://github.com/LocusEnergy/api-docs). Feel free to contribute by submitting a pull request.
