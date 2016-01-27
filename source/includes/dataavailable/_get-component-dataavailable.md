@@ -3,13 +3,13 @@
 > Example request:
 
 ```http
-GET https://api.locusenergy.com/v3/component/123/dataavailable HTTP/1.1
+GET https://api.locusenergy.com/v3/components/123/dataavailable HTTP/1.1
 Accept: application/json
 Authorization: Bearer ACCESS_TOKEN
 ```
 
 ```shell
-curl https://api.locusenergy.com/v3/component/123/dataavailable
+curl https://api.locusenergy.com/v3/components/123/dataavailable
   -X GET
   -H "Accept: application/json"
   -H "Authorization: Bearer ACCESS_TOKEN"
@@ -465,7 +465,7 @@ This endpoint retrieves a list of available data types for a component.
 
 ### Definition
 
-`GET /v3/component/{componentId}/dataavailable`
+`GET /v3/components/{componentId}/dataavailable`
 
 ### Arguments
 

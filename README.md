@@ -14,3 +14,4 @@ Note: Instructions are for setup on Linux.  Differences are noted for OS X users
 1. Change into the `api-docs` directory
 2. `bundle exec middleman server`
 3. In your browser navigate to [http://localhost:4567](http://localhost:4567)
+4. Refresh the browser to update with local changes
