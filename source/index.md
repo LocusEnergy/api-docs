@@ -51,5 +51,10 @@ includes:
   - data/get-component-data
   - data/get-site-data
 
+  - alerts/alerts
+  - alerts/get-partner-alerts
+  - alerts/get-site-alerts
+  - alerts/get-component-alerts
+
 search: true
 ---
