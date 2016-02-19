@@ -22,7 +22,7 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?tz=UTC
     "statusCode": 200,
     "alerts": [
         {
-            "id": 123,
+            "id": 999,
             "componentId": 456,
             "alertType": "System Disconnect",
             "priority": "High",
@@ -67,7 +67,7 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?updatedSince=2014-11-20T00:
     "statusCode": 200,
     "alerts": [
         {
-            "id": 123,
+            "id": 999,
             "componentId": 456,
             "alertType": "System Disconnect",
             "priority": "High",
@@ -112,7 +112,7 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?openDuringMin=2014-09-01T00
     "statusCode": 200,
     "alerts": [
         {
-            "id": 123,
+            "id": 999,
             "componentId": 456,
             "alertType": "System Disconnect",
             "priority": "High",
@@ -143,13 +143,13 @@ This endpoint retrieves alerts for the site and [filter params](#filters) reques
 
 ### Arguments
 
-Argument | Description | Required? | Default
---- | --- | --- | ---
-siteId | Unique identifier for the site | yes |
-tz | Timezone for data requested | yes |
-updatedSince | Timestamp since when the alerts have been updated. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMin | Timestamp at which the open during period starts. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMax | Timestamp at which the open during period ends. Format YYYY-MM-DDThh:mm:ss. | no |
+Argument | Description | Required?
+--- | --- | ---
+siteId | Unique identifier for the site | yes
+tz | Timezone for data requested | yes
+updatedSince | Timestamp since when the alerts have been updated. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMin | Timestamp at which the open during period starts. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMax | Timestamp at which the open during period ends. Format YYYY-MM-DDThh:mm:ss. | no
 
 ### Returns
 
