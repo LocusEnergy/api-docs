@@ -112,13 +112,13 @@ This endpoint retrieves alerts for the site and [filter params](#filters) reques
 
 ### Arguments
 
-Argument | Description | Required? | Default
---- | --- | --- | ---
-componentId | Unique identifier for the component | yes |
-tz | Timezone for data requested | yes |
-updatedSince | Timestamp since when the alerts have been updated. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMin | Timestamp at which the open during period starts. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMax | Timestamp at which the open during period ends. Format YYYY-MM-DDThh:mm:ss. | no |
+Argument | Description | Required?
+--- | --- | ---
+componentId | Unique identifier for the component | yes
+tz | Timezone for data requested | yes
+updatedSince | Timestamp since when the alerts have been updated. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMin | Timestamp at which the open during period starts. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMax | Timestamp at which the open during period ends. Format YYYY-MM-DDThh:mm:ss. | no
 
 ### Returns
 
