@@ -2,7 +2,7 @@
 
 ## Overview
 
-Alerts provide a notification a certain issues that could occur to a given component. Types of alerts include:
+Alerts provide a notification for certain issues that can occur to a give component. Types of alerts include:
 
 * System Disconnect: the device has not communicated with the server for a certain period of time
 * Zero Generation: the device has not generated energy for a certain period of time when it was expected that it should be generating
