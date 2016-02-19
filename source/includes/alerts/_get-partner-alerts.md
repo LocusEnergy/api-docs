@@ -22,7 +22,7 @@ curl https://api.locusenergy.com/v3/partners/123/alerts?updatedSince=2015-11-20T
     "statusCode": 200,
     "alerts": [
         {
-            "id": 123,
+            "id": 999,
             "componentId": 456,
             "alertType": "System Disconnect",
             "priority": "High",
@@ -67,7 +67,7 @@ curl https://api.locusenergy.com/v3/partners/123/alerts?openDuringMin=2015-09-01
     "statusCode": 200,
     "alerts": [
         {
-            "id": 123,
+            "id": 999,
             "componentId": 456,
             "alertType": "System Disconnect",
             "priority": "High",
@@ -100,13 +100,13 @@ This endpoint retrieves alerts for the partner and [filter params](#filters) req
 
 Either `updatedSince` or both `openDuringMin` and `openDuringMax` are required.
 
-Argument | Description | Required? | Default
---- | --- | --- | ---
-partnerId | Unique identifier for the partner | yes |
-tz | Timezone for data requested | yes |
-updatedSince | Timestamp since when the alerts have been updated. Limited to up to 7 days ago. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMin | Timestamp at which the open during period starts. Open during time period is limited to 31 days. Format YYYY-MM-DDThh:mm:ss. | no |
-openDuringMax | Timestamp at which the open during period ends. Open during time period is limited to 31 days. Format YYYY-MM-DDThh:mm:ss. | no |
+Argument | Description | Required?
+--- | --- | ---
+partnerId | Unique identifier for the partner | yes
+tz | Timezone for data requested | yes
+updatedSince | Timestamp since when the alerts have been updated. Limited to up to 7 days ago. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMin | Timestamp at which the open during period starts. Open during time period is limited to 31 days. Format YYYY-MM-DDThh:mm:ss. | no
+openDuringMax | Timestamp at which the open during period ends. Open during time period is limited to 31 days. Format YYYY-MM-DDThh:mm:ss. | no
 
 ### Returns
 
