@@ -1,6 +1,6 @@
 ## Introduction
 
-The Locus Energy v3 API can be found at <https://api.locusenergy.com/v3>.
+The Locus Energy v3 API endpoint prefix is <code>https://api.locusenergy.com/v3</code>.
 
 The API provides programmatic access to much of the data found in SolarOS. It deals with a few types objects and associated data:
 
