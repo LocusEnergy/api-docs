@@ -55,7 +55,7 @@ This endpoint retrieves sites for a client.
 
 ### Definition
 
-`GET /v3/clients/{clientId}`
+`GET /v3/clients/{clientId}/sites`
 
 ### Arguments
 
