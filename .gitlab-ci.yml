@@ -4,20 +4,15 @@ services:
   - docker:dind
 
 variables:
-  CONTAINER_TEST_IMAGE: hub.datareadings.com:5000/api-docs:$CI_BUILD_REF_NAME
-  CONTAINER_RELEASE_IMAGE: hub.datareadings.com:5000/api-docs:latest
+  PROJECT_NAME: api-docs
 
 stages:
-  - build
-  - test
+  - deploy
 
-build:
-  stage: build
+deploy:
+  stage: deploy
   script:
-    - docker build -t $CONTAINER_TEST_IMAGE .
-    - docker push $CONTAINER_TEST_IMAGE
-
-test:
-  stage: test
-  script:
-    - docker run -e "APP_ENV=test-only" $CONTAINER_TEST_IMAGE
+    - docker build -t $PROJECT_NAME .
+    - docker run -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" api-docs
+  only:
+    - master
