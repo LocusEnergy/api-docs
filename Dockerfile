@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y \
         && bundle install \
         && bundle exec middleman build
 
-CMD ["aws", "s3", "cp", "build/", "s3://locus-external-api-docs", "--recursive"]
+CMD ["aws", "s3", "cp", "build/", "s3://developer.locusenergy.com", "--recursive"]
