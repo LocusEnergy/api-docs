@@ -1,12 +1,17 @@
-FROM ubuntu:trusty
+FROM ruby:2.3
 
-RUN apt-get update
-RUN apt-get install -yq ruby ruby-dev build-essential git
-RUN gem install --no-ri --no-rdoc bundler
-ADD Gemfile /app/Gemfile
-ADD Gemfile.lock /app/Gemfile.lock
-RUN cd /app; bundle install
-ADD . /app
-EXPOSE 4567
-WORKDIR /app
-CMD ["bundle", "exec", "middleman", "server"]
+ENV APP_ROOT=/app
+
+WORKDIR $APP_ROOT
+COPY . $APP_ROOT
+
+RUN apt-get update && apt-get install -y \
+        python-pip \
+        python-dev \
+        build-essential \
+        && pip install --upgrade pip \
+        && pip install awscli \
+        && bundle install \
+        && bundle exec middleman build
+
+CMD ["aws", "s3", "cp", "build/", "s3://locus-external-api-docs", "--recursive"]

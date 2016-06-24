@@ -1,0 +1,23 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  CONTAINER_TEST_IMAGE: hub.datareadings.com:5000/api-docs:$CI_BUILD_REF_NAME
+  CONTAINER_RELEASE_IMAGE: hub.datareadings.com:5000/api-docs:latest
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - docker build -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+
+test:
+  stage: test
+  script:
+    - docker run -e "APP_ENV=test-only" $CONTAINER_TEST_IMAGE
