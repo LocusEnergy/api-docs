@@ -44,5 +44,5 @@ Parameter|Required?|Default|Description
 grant_type|yes||The string "password". This defines the OAuth 2.0 flow.
 client_id|yes||The `client_id` for your application. Obtain this from your account manager.
 client_secret|yes||The `client_secret` for your application. Obtain this from your account manager.
-username|yes||The user's SolarOS username.
-password|yes||The user's SolarOS password.
+username|yes||The user's SolarNOC username.
+password|yes||The user's SolarNOC password.

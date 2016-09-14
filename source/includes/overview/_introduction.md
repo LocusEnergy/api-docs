@@ -2,9 +2,9 @@
 
 The Locus Energy v3 API endpoint prefix is <code>https://api.locusenergy.com/v3</code>.
 
-The API provides programmatic access to much of the data found in SolarOS. It deals with a few types objects and associated data:
+The API provides programmatic access to much of the data found in SolarNOC. It deals with a few types objects and associated data:
 
-- **Clients:** a client is a container for sites. It contains information about client name, timezone, and other metadata found in SolarOS. Clients are often also referred to as 'projects.'
+- **Clients:** a client is a container for sites. It contains information about client name, timezone, and other metadata found in SolarNOC. Clients are often also referred to as 'projects.'
 
 - **Sites:** a site primarily provides holds location information, as well as site-level metadata such as size and installer. A client can have multiple sites. A site also has timeseries data associated with it.
 
