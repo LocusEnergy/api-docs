@@ -6,6 +6,7 @@ Timeseries data calls return interval, rather than accumulated values for the gr
 
 For all data calls, the time period allowed depends upon the granularity chosen.
 
+* 1min: < 5 days
 * 5min: < 7 days
 * 15min: < 7 days
 * hourly: < 31 days

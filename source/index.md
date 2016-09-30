@@ -17,6 +17,7 @@ includes:
   - overview/rate-limiting
   - overview/versioning
   - overview/compression
+  - overview/changelog
 
   - workflows/workflows
   - workflows/get-data-component
