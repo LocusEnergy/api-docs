@@ -48,10 +48,12 @@ includes:
   - dataavailable/dataavailable
   - dataavailable/get-component-dataavailable
   - dataavailable/get-site-dataavailable
+  - dataavailable/get-site-bulk-dataavailable
 
   - data/data
   - data/get-component-data
   - data/get-site-data
+  - data/get-site-bulk-data
 
   - alerts/alerts
   - alerts/get-partner-alerts
