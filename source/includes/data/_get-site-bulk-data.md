@@ -46,6 +46,7 @@ curl https://api.locusenergy.com/v3/partners/111/sites/data?start=2014-04-01T00:
 ```
 
 Bulk data allows users to obtain data for all sites with one API request. The advantages / differences with the data API are:
+
 - Grab data for all sites in one call
 - Site data only
 - Monthly granularity only
