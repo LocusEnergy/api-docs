@@ -8,23 +8,17 @@ ACTION=$3
 DEPLOY="deploy"
 TEARDOWN="teardown"
 BUILD_DIRECTORY="build"
-DELIMITER="-"
-BUCKET_SUFFIX=".datareadings.com"
-BUCKET_MAX_CHARACTERS=63
 
 # strip out characters unsafe for URLs
 url_safe() {
-    echo $1 | tr '[_/]' '-' | tr '[:upper:]' '[:lower:]'
+    echo ${1:0:63} | tr '[_/]' '-' | tr '[:upper:]' '[:lower:]'
 }
 
 # create the bucket name based on the branch name.
 # here, we replace all '_' and '/'s in the branch name with '-'.
-# we also make sure the bucket name is within the limit of max characters
 PROJECT=$(url_safe $PROJECT)
-CHARACTERS_REMAINING=`expr $BUCKET_MAX_CHARACTERS - ${#PROJECT} - ${#DELIMITER} - ${#BUCKET_SUFFIX}`
 BRANCH=$(url_safe $BRANCH)
-BRANCH=${BRANCH:0:CHARACTERS_REMAINING}
-BUCKET=$PROJECT$DELIMITER$BRANCH$BUCKET_SUFFIX
+BUCKET=$PROJECT-$BRANCH.datareadings.com
 
 if [ $ACTION = $DEPLOY ]; then
     bundle exec middleman build
