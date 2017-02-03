@@ -31,6 +31,7 @@ if [ $ACTION = $DEPLOY ]; then
     aws s3 mb s3://$BUCKET/
     aws s3 website s3://$BUCKET/ --index-document index.html --error-document index.html
     aws s3 sync --acl public-read $BUILD_DIRECTORY s3://$BUCKET/
+    echo $BUCKET
 elif [ $ACTION = $TEARDOWN ]; then
     aws s3 rb s3://$BUCKET/ --force
 else
