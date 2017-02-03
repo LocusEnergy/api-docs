@@ -11,7 +11,7 @@ BUILD_DIRECTORY="build"
 
 # strip out characters unsafe for URLs
 url_safe() {
-    echo $1 | tr '[_/]' '-' | tr '[:upper:]' '[:lower:]'
+    echo ${1:0:63} | tr '[_/]' '-' | tr '[:upper:]' '[:lower:]'
 }
 
 # create the bucket name based on the branch name.
