@@ -1,18 +1,44 @@
-image: docker:latest
-
-services:
-  - docker:dind
-
 variables:
-  PROJECT_NAME: api-docs
+    REGISTRY: hub.datareadings.com:5000
+    IMAGE: "$REGISTRY/$CI_PROJECT_NAME:$CI_BUILD_REF_NAME"
 
 stages:
-  - deploy
+    - deploy
 
 deploy:
-  stage: deploy
-  script:
-    - docker build -t $PROJECT_NAME .
-    - docker run -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" api-docs
-  only:
-    - master
+    stage: deploy
+    script:
+        - docker build -t $IMAGE .
+        - docker run -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" $IMAGE ./actions.sh $CI_PROJECT_NAME $CI_BUILD_REF_NAME deploy
+        - docker push $IMAGE
+    environment:
+        name: $CI_BUILD_REF_NAME
+        url: http://$CI_PROJECT_NAME-$CI_BUILD_REF_NAME.datareadings.com.s3-website-us-east-1.amazonaws.com
+    only:
+        - master
+
+deploy_review:
+    stage: deploy
+    script:
+        - docker build -t $IMAGE .
+        - docker run -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" $IMAGE ./actions.sh $CI_PROJECT_NAME $CI_BUILD_REF_NAME deploy
+        - docker push $IMAGE
+    environment:
+        name: review/$CI_BUILD_REF_NAME
+        url: http://$CI_PROJECT_NAME-$CI_BUILD_REF_NAME.datareadings.com.s3-website-us-east-1.amazonaws.com
+        on_stop: stop_review
+    only:
+        - branches
+    except:
+        - master
+
+stop_review:
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+    script:
+        - docker run -e "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" -e "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" -e "AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" $IMAGE ./actions.sh $CI_PROJECT_NAME $CI_BUILD_REF_NAME teardown
+    when: manual
+    environment:
+        name: review/$CI_BUILD_REF_NAME
+        action: stop
