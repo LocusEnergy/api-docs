@@ -31,7 +31,7 @@ curl https://api.locusenergy.com/oauth/token
 
 The API uses the [OAuth 2 Resource Owner Password Credentials flow](https://tools.ietf.org/html/rfc6749#section-4.3). If successful, an `access_token` is returned with an accompanying `refresh_token`. Once the `access_token` expires, you can [refresh it](#refreshing-an-access-token) by using the `refresh_token`.
 
-<aside class="notice">Most API credentials for customers use this flow. If your credentials don't work for this flow, please try [Client Credentials](#client-credentials). If you continue to experience trouble authenticating, please contact <a href="mailto:support@locusenergy.com">support</a>.</aside>
+Most API credentials for customers use this flow. If your credentials don't work for this flow, please try [Client Credentials](#client-credentials). If you continue to experience trouble authenticating, please contact <a href="mailto:support@locusenergy.com">support</a>.
 
 ### Definition
 
