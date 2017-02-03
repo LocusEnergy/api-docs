@@ -27,7 +27,7 @@ curl https://api.locusenergy.com/oauth/token
 }
 ```
 
-For API credentials created before April 30, 2015, the API uses the [OAuth 2 Client Credentials flow](https://tools.ietf.org/html/rfc6749#section-4.4). If successful, an `access_token` is returned with a 1 hour lifetime. Once the `access_token` expires, you will need to authenticate again to get a new one.
+For some special use cases, the API uses the [OAuth 2 Client Credentials flow](https://tools.ietf.org/html/rfc6749#section-4.4). If successful, an `access_token` is returned with a 1 hour lifetime. Once the `access_token` expires, you will need to authenticate again to get a new one.
 
 If your credentials don't work for this flow, please try [Resource Owner Password flow](#resource-owner-password). If you continue to experience trouble authenticating, please contact <a href="mailto:support@locusenergy.com">support</a>.
 
