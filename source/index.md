@@ -6,7 +6,6 @@ language_tabs:
   - shell
 
 toc_footers:
-  - <a href='https://github.com/LocusEnergy/api-docs' target='_blank'>Contribute to this documentation</a>
   - <a href='http://github.com/tripit/slate' target='_blank'>Documentation Powered by Slate</a>
 
 includes:
