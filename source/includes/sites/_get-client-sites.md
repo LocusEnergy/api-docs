@@ -32,7 +32,8 @@ curl https://api.locusenergy.com/v3/clients/456/sites
       "locale1": "California",
       "localeCode1": "CA",
       "postalCode": "94105",
-      "countryCode": "US"
+      "countryCode": "US",
+      "locationTimezone": "America/Los_Angeles"
     },
     {
       "statusCode": 200,
@@ -45,7 +46,8 @@ curl https://api.locusenergy.com/v3/clients/456/sites
       "locale1": "New Jersey",
       "localeCode1": "NJ",
       "postalCode": "07030",
-      "countryCode": "US"
+      "countryCode": "US",
+      "locationTimezone": "America/New_York"
     }
   ]
 }
