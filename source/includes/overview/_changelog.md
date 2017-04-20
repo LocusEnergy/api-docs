@@ -2,7 +2,7 @@
 
 ### 2017-04-20
 
-- Added the read-only field "locationTimezone" to site objects
+- Added the read-only field `locationTimezone` to [site objects](#sites)
 
 ### 2016-11-11
 
