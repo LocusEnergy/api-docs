@@ -1,5 +1,9 @@
 ## Changelog
 
+### 2017-04-20
+
+- Added the read-only field "locationTimezone" to site objects
+
 ### 2016-11-11
 
 - Added the ability to get data for all sites in one request
