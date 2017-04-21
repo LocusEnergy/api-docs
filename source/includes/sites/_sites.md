@@ -13,7 +13,8 @@
   "locale1": "California",
   "localeCode1": "CA",
   "postalCode": "94105",
-  "countryCode": "US"
+  "countryCode": "US",
+  "locationTimezone": "America/Los_Angeles"
 }
 ```
 
@@ -33,3 +34,4 @@ postalCode | String | Within the US, zip code | yes
 countryCode | String | Country name abbreviation | yes
 latitude | Float | Latitude | no
 longitude | Float | Longitude | no
+locationTimezone | String | Timezone | no

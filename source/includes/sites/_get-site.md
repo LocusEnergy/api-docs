@@ -29,7 +29,8 @@ curl https://api.locusenergy.com/v3/sites/123
   "locale1": "California",
   "localeCode1": "CA",
   "postalCode": "94105",
-  "countryCode": "US"
+  "countryCode": "US",
+  "locationTimezone": "America/Los_angeles"
 }
 ```
 
