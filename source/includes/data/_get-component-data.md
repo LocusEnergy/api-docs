@@ -52,7 +52,13 @@ fields | Comma-delimited list of valid [shortNames](#aggregations) | yes |
 start | Timestamp of start period of request | yes |
 end | Timestamp of end period of request | yes |
 tz | Timezone for data requested | yes |
-gran | Granularity for data requested. Options are 1min, 5min, 15min, hourly, daily, monthly, yearly | yes |
+gran | Granularity for data requested. Options are latest, 1min, 5min, 15min, hourly, daily, monthly, yearly | yes |
+
+### Note
+
+With `latest` gran, `start` and `end` arguments are not used and can be excluded. Only the latest 
+data point is returned in the response object
+
 
 ### Returns
 
