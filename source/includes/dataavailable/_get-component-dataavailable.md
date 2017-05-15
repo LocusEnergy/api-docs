@@ -41,6 +41,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -69,6 +71,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -97,6 +101,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -133,6 +139,7 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -161,6 +168,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -189,6 +198,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -217,6 +228,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -245,6 +258,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -273,6 +288,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -309,6 +326,7 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -329,6 +347,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -365,6 +385,7 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -393,6 +414,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -421,6 +444,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",
@@ -449,6 +474,8 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         }
       ],
       "granularities": [
+        "latest",
+        "1min",
         "5min",
         "15min",
         "hourly",

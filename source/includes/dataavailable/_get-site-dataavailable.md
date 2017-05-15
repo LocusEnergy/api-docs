@@ -123,6 +123,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 }
             ],
             "granularities": [
+                "1min",
                 "5min",
                 "15min",
                 "hourly",
@@ -143,6 +144,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 }
             ],
             "granularities": [
+                "1min",
                 "5min",
                 "15min",
                 "hourly",
@@ -202,6 +204,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 }
             ],
             "granularities": [
+                "1min",
                 "5min",
                 "15min",
                 "hourly",
