@@ -1,5 +1,9 @@
 ## Changelog
 
+### 2017-07-20
+
+- Added documentation to [use Postman](#postman)
+
 ### 2017-05-15
 
 - Added the `latest` granularity to Component level Data Available and Data calls
