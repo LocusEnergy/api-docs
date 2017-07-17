@@ -6,13 +6,14 @@ language_tabs:
   - shell
 
 toc_footers:
-  - <a href='http://github.com/tripit/slate' target='_blank'>Documentation Powered by Slate</a>
   - <a href='https://app.getpostman.com/run-collection/74df59158f79ade720d0#?env%5BLocus%20Energy%20External%20API.template%5D=W3sia2V5IjoiY2xpZW50X2lkIiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsInR5cGUiOiJ0ZXh0IiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJjbGllbnRfc2VjcmV0IiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsInR5cGUiOiJ0ZXh0IiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJ1c2VybmFtZSIsInZhbHVlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ0eXBlIjoidGV4dCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGFzc3dvcmQiLCJ2YWx1ZSI6IiIsImRlc2NyaXB0aW9uIjoiIiwidHlwZSI6InRleHQiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InJlZnJlc2hfdG9rZW4iLCJ2YWx1ZSI6IiIsImRlc2NyaXB0aW9uIjoiIiwidHlwZSI6InRleHQiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImFjY2Vzc190b2tlbiIsInZhbHVlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ0eXBlIjoidGV4dCIsImVuYWJsZWQiOnRydWV9XQ==' target='_blank'><img src='https://run.pstmn.io/button.svg' /></a>
+  - <a href='http://github.com/tripit/slate' target='_blank'>Documentation Powered by Slate</a>
 
 includes:
   - overview/overview
   - overview/introduction
   - overview/getting-started
+  - overview/postman
   - overview/errors
   - overview/rate-limiting
   - overview/versioning
