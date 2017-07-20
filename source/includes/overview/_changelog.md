@@ -3,6 +3,7 @@
 ### 2017-07-20
 
 - Added documentation to [use Postman](#postman)
+- Added `componentName`, `siteId` and `siteName` to the [`alerts`](#alerts) object
 
 ### 2017-05-15
 

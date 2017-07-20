@@ -24,6 +24,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?tz=UTC
         {
             "id": 999,
             "componentId": 456,
+            "componentName": "Test Inverter 1",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "System Disconnect",
             "priority": "High",
             "start": "2015-11-01T12:00:00-00:00",
@@ -33,6 +36,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?tz=UTC
         {
             "id": 78,
             "componentId": 90,
+            "componentName": "Test Inverter 2",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "Device Fault",
             "priority": "Medium",
             "start": "2015-11-01T12:00:00-00:00",
@@ -69,6 +75,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?updatedSince=2014-11-20T00:
         {
             "id": 999,
             "componentId": 456,
+            "componentName": "Test Inverter 1",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "System Disconnect",
             "priority": "High",
             "start": "2014-11-01T12:00:00-00:00",
@@ -78,6 +87,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?updatedSince=2014-11-20T00:
         {
             "id": 78,
             "componentId": 90,
+            "componentName": "Test Inverter 2",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "Device Fault",
             "priority": "Medium",
             "start": "2015-11-01T12:00:00-00:00",
@@ -114,6 +126,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?openDuringMin=2014-09-01T00
         {
             "id": 999,
             "componentId": 456,
+            "componentName": "Test Inverter 1",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "System Disconnect",
             "priority": "High",
             "start": "2014-09-01T12:00:00-07:00",
@@ -123,6 +138,9 @@ curl https://api.locusenergy.com/v3/sites/123/alerts?openDuringMin=2014-09-01T00
         {
             "id": 78,
             "componentId": 90,
+            "componentName": "Test Inverter 2",
+            "siteId": 123,
+            "siteName": "Test Site",
             "alertType": "Device Fault",
             "priority": "Medium",
             "start": "2015-09-01T12:00:00-07:00",
