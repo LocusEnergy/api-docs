@@ -27,6 +27,9 @@ Open during is a concept that means the alert is open at any point within the gi
 {
     "id": 78,
     "componentId": 90,
+    "componentName": "Test Inverter",
+    "siteId": 99,
+    "siteName": "Test Site",
     "alertType": "Device Fault",
     "priority": "Medium",
     "start": "2015-11-01T12:00:00-00:00",
@@ -43,6 +46,9 @@ Attribute | Type| Description | Always returned?
 ---|---|---|---
 id | Integer | The unique identifier for the alert | yes
 componentId | Integer | The unique identifier for the component that has the alert | yes
+componentName | String | The name of the component that has the alert | yes
+siteId | Integer | The unique identifier for the site that the component belongs to | yes
+siteName | String | The name of the site | yes
 alertType | String | The type of alert. Valid types are: System Disconnect, Device Fault, Zero Generation, Performance Yield | yes
 priority | String | Priority of the alert. Valid priorities are: High, Medium and Low | yes
 start | String (YYYY-MM-DDThh:mm:ssZ) | Start time of the alert. This should be in the timezone specified by the tz query param of the request. | yes

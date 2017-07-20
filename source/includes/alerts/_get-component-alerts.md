@@ -24,6 +24,9 @@ curl https://api.locusenergy.com/v3/components/123/alerts?tz=UTC
         {
             "id": 999,
             "componentId": 123,
+            "componentName": "Test Inverter",
+            "siteId": 99,
+            "siteName": "Test Site",
             "alertType": "System Disconnect",
             "priority": "High",
             "start": "2015-11-01T12:00:00-00:00",
@@ -58,6 +61,9 @@ curl https://api.locusenergy.com/v3/components/90/alerts?updatedSince=2014-11-20
         {
             "id": 78,
             "componentId": 90,
+            "componentName": "Test Inverter",
+            "siteId": 99,
+            "siteName": "Test Site",
             "alertType": "Device Fault",
             "priority": "Medium",
             "start": "2015-11-01T12:00:00-00:00",
@@ -94,6 +100,9 @@ curl https://api.locusenergy.com/v3/components/123/alerts?openDuringMin=2014-09-
         {
             "id": 999,
             "componentId": 123,
+            "componentName": "Test Inverter",
+            "siteId": 99,
+            "siteName": "Test Site",
             "alertType": "System Disconnect",
             "priority": "High",
             "start": "2014-09-01T12:00:00-07:00",
