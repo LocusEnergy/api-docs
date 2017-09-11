@@ -16,7 +16,7 @@ Alerts can be filtered through the query parameters.
 - `updatedSince`: allows you to get a list of alerts that have been updated since a certain timestamp. This is particularly useful for use cases where you would like to sync alerts into another platform, such as a ticketing system. By specifying `updatedSince` to the time of the last API call, you are getting only the new status changes of the alerts.
 - `openDuringMin` and `openDuringMax`: "open during" is a concept that means the alert is open at any point within the given time period. The time period is defined between the `openDuringMin` and `openDuringMax` query parameters.
 - `alertType`: there are four valid alert types: `Device Fault`, `Performance Index`, `System Disconnect`, `Zero Generation`. You can provide one or more of these alert types as a comma-separated list to `alertType`. If no `alertType` is not provided, it defaults to all types.
-- `status`: valid status types are `open` and `closed`. `open` alerts have not yet closed. `closed` alerts are no longer open.
+- `status`: valid statuses are `open` and `closed`. `open` alerts have not yet closed. `closed` alerts are no longer open. If no `status` is provided, it defaults to all statuses.
 
 ## Alert object
 
