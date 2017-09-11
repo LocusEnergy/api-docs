@@ -1,5 +1,9 @@
 ## Changelog
 
+### 2017-09-11
+
+- Added additional [filter options on `alerts`](#filters), including `alertType` and `status`
+
 ### 2017-07-20
 
 - Added documentation to [use Postman](#postman)
