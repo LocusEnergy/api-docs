@@ -23,6 +23,7 @@ includes:
   - workflows/workflows
   - workflows/get-data-component
   - workflows/get-lifetime-energy-component
+  - workflows/traverse-hierarchy
 
   - authentication/authentication
   - authentication/resource-owner-password
