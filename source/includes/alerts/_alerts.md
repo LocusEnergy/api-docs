@@ -17,7 +17,7 @@ Alerts can be filtered through the query parameters.
 - `openDuringMin` and `openDuringMax`: "open during" is a concept that means the alert is open at any point within the given time period. The time period is defined between the `openDuringMin` and `openDuringMax` query parameters.
 - `alertType`: valid types are `Device Fault`, `Performance Index`, `Strings Performance`, `System Disconnect`, and `Zero Generation`. You can provide one or more of these alert types as a comma-separated list to `alertType`. If no `alertType` is not provided, it defaults to all types.
 - `status`: valid statuses are `open` and `closed`. `open` alerts have not yet closed. `closed` alerts are no longer open. If no `status` is provided, it defaults to all statuses.
-- `priority`: valid priorities are `high`, `medium`, and `low`. One or more of these priorities can provided as a comma-separated list. If no `priority` is provided, it defaults to all priorities.
+- `priority`: valid priorities are `high`, `medium`, and `low`. One or more of these priorities can be provided as a comma-separated list. If no `priority` is provided, it defaults to all priorities.
 
 ## Alert object
 
@@ -47,7 +47,7 @@ componentId | Integer | The unique identifier for the component that has the ale
 componentName | String | The name of the component that has the alert | yes
 siteId | Integer | The unique identifier for the site that the component belongs to | yes
 siteName | String | The name of the site | yes
-alertType | String | The type of alert. Valid types are: System Disconnect, Device Fault, Zero Generation, Performance Yield | yes
+alertType | String | The type of alert. Valid types are: `Device Fault`, `Performance Index`, `Strings Performance`, `System Disconnect`, and `Zero Generation` | yes
 priority | String | Priority of the alert. Valid priorities are: High, Medium and Low | yes
 start | String (YYYY-MM-DDThh:mm:ssZ) | Start time of the alert. This should be in the timezone specified by the tz query param of the request. | yes
 end | String (YYYY-MM-DDThh:mm:ssZ) | End time of the alert. This should be in the timezone specified by the tz query param of the request. | no
