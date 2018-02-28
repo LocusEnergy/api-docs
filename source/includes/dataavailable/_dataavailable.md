@@ -55,7 +55,7 @@ longName | String | Human-readable name of this base field | yes
 source | String | Type of data. This can be Measured, Modeled or Expected | yes
 unit | String | Unit of this data type | yes
 aggregations | Array | Array of [aggregations](#aggregations) | yes
-fieldParameters | Array | Array of [field parameters](#field-parameters). | yes
+fieldParameters | Array | Array of [field parameters](#field-parameters) | yes
 granularities | Array of Strings | Array of granularities allowed | yes
 
 #### Aggregations
