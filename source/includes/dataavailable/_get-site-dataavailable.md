@@ -110,7 +110,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 {
                     "param": "irradianceSource",
                     "values": [
-                        "TMY"
+                        "weatherStation"
                     ]
                 },
                 {
@@ -190,7 +190,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 {
                     "param": "irradianceSource",
                     "values": [
-                        "TMY"
+                        "weatherStation"
                     ]
                 },
                 {
