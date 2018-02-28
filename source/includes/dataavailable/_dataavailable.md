@@ -18,14 +18,13 @@
         {
             "param": "modelType",
             "values": [
-                "singleDiode",
                 "simple"
             ]
         },
         {
             "param": "irradianceSource",
             "values": [
-                "TMY"
+                "weatherStation"
             ]
         },
         {
@@ -67,6 +66,8 @@ shortName | String | Base field with the aggregation appended. This fully define
 aggregation | String | Aggregation for this short name. Options are min, max, avg and sum. | yes
 
 #### Field Parameters
+
+<aside class="warning">Field parameters have been deprecated in favor of explicit PV model configuration via <a href="https://solarnoc.datareadings.com/" target="_blank">LocusNOC</a>. Any field parameters sent as part of a <code>data</code> request will not cause any harm, but will be ignored. For more information, please see the <a href="https://locusenergy.force.com/s/article/PV-Model-Settings" target="_blank">LocusNOC documentation</a>.</aside>
 
 Attribute | Type| Description | Always returned?
 ---|---|---|---

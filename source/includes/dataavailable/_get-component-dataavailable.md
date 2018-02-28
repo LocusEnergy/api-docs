@@ -120,14 +120,13 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         {
           "param": "modelType",
           "values": [
-            "singleDiode"
+            "simple"
           ]
         },
         {
           "param": "irradianceSource",
           "values": [
-            "weatherStation",
-            "TMY"
+            "weatherStation"
           ]
         },
         {
@@ -307,14 +306,13 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         {
           "param": "modelType",
           "values": [
-            "singleDiode"
+            "simple"
           ]
         },
         {
           "param": "irradianceSource",
           "values": [
-            "weatherStation",
-            "TMY"
+            "weatherStation"
           ]
         },
         {
@@ -366,14 +364,13 @@ curl https://api.locusenergy.com/v3/components/123/dataavailable
         {
           "param": "modelType",
           "values": [
-            "singleDiode"
+            "simple"
           ]
         },
         {
           "param": "irradianceSource",
           "values": [
-            "weatherStation",
-            "TMY"
+            "weatherStation"
           ]
         },
         {
