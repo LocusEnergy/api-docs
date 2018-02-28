@@ -17,6 +17,8 @@ For all data calls, the time period allowed depends upon the granularity chosen.
 
 ### Field Parameters
 
+<aside class="warning">Field parameters have been deprecated in favor of explicit PV model configuration via <a href="https://solarnoc.datareadings.com/" target="_blank">LocusNOC</a>. Any field parameters sent as part of a <code>data</code> request will be ignored. For more information, please see the <a href="https://locusenergy.force.com/s/article/PV-Model-Settings" target="_blank">LocusNOC documentation</a>.</aside>
+
 [Field parameters](#field-parameters) describe additional query parameters that need to be provided in a `data` call in order to function properly. For example, in order to make a request for Modeled AC Power, the `data` request must use the field parameters provided in the `dataavailable` response. Based on the field parameters returned, an example data call could be: `GET /data?fields=W_m_avg&start=2015-08-01T00:00:00&end=2015-08-02T00:00:00&tz=US/Pacific&gran=5min&modelType=singleDiode&irradianceSource=TMY&inverterClipping=true`.
 
 Depending upon the entity, available field parameters are explained below. All options for the field parameters are dictated by the results of the `dataavailable` call.

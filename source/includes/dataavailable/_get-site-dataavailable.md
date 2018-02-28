@@ -104,7 +104,6 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 {
                     "param": "modelType",
                     "values": [
-                        "singleDiode",
                         "simple"
                     ]
                 },
@@ -185,7 +184,6 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
                 {
                     "param": "modelType",
                     "values": [
-                        "singleDiode",
                         "simple"
                     ]
                 },
