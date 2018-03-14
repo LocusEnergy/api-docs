@@ -8,8 +8,8 @@ For all data calls, the time period allowed depends upon the granularity chosen.
 
 * latest: not applicable
 * 1min: < 5 days
-* 5min: < 7 days
-* 15min: < 7 days
+* 5min: < 31 days
+* 15min: < 31 days
 * hourly: < 31 days
 * daily: < 1 year
 * monthly: no limitations

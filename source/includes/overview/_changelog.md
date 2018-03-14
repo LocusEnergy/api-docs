@@ -1,5 +1,9 @@
 ## Changelog
 
+### 2018-03-13
+
+- 5min and 15min granularity data time period limit extended from 7 to 31 days
+
 ### 2017-09-11
 
 - Added additional [filter options on `alerts`](#filters), including `alertType` and `status`
