@@ -1,5 +1,9 @@
 ## Changelog
 
+### 2018-05-30
+
+- Updated the longnames of some modeled fields
+
 ### 2018-03-13
 
 - 5min and 15min granularity data time period limit extended from 7 to 31 days
