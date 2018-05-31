@@ -83,7 +83,7 @@ curl https://api.locusenergy.com/v3/partners/111/sites/dataavailable
     },
     {
       "baseField": "GHIhp_m",
-      "longName": "Insolation Global Horizontal (prorated)",
+      "longName": "VI - Insolation Global Horizontal (prorated)",
       "source": "Modeled",
       "unit": "Wh/m&#178;",
       "aggregations": [
