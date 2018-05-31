@@ -2,9 +2,9 @@
 
 ### 2018-05-31
 
-- Updated the longnames of basefields `GHI_m`, `GHIh_m`, and `GHIhp_m` to `VI - Irradiance Global Horizontal`,
-  `VI - Insolation Global Horizontal`, and `VI - Insolation Global Horizontal (prorated)`.
-   They previously did not have `VI - ` in front.
+- GHI_m from Irradiance Global Horizontal to VI - Irradiance Global Horizontal
+- GHIh_m from Insolation Global Horizontal to VI - Insolation Global Horizontal
+- GHIhp_m from Insolation Global Horizontal (prorated) to VI - Insolation Global Horizontal (prorated)
 
 ### 2018-03-13
 
