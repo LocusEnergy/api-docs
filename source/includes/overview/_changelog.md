@@ -1,5 +1,11 @@
 ## Changelog
 
+### 2018-06-07
+
+- `GHI_m` from `Irradiance Global Horizontal` to `VI - Irradiance Global Horizontal`
+- `GHIh_m` from `Insolation Global Horizontal` to `VI - Insolation Global Horizontal`
+- `GHIhp_m` from `Insolation Global Horizontal (prorated)` to `VI - Insolation Global Horizontal (prorated)`
+
 ### 2018-03-13
 
 - 5min and 15min granularity data time period limit extended from 7 to 31 days

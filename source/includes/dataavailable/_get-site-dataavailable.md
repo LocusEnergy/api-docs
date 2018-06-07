@@ -23,7 +23,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
     "baseFields": [
         {
             "baseField": "GHI_m",
-            "longName": "Irradiance Global Horizontal",
+            "longName": "VI - Irradiance Global Horizontal",
             "source": "Modeled",
             "unit": "W/m²",
             "aggregations": [
@@ -49,7 +49,7 @@ curl https://api.locusenergy.com/v3/sites/123/dataavailable
         },
         {
             "baseField": "GHIh_m",
-            "longName": "Insolation Global Horizontal",
+            "longName": "VI - Insolation Global Horizontal",
             "source": "Modeled",
             "unit": "Wh/m²",
             "aggregations": [
