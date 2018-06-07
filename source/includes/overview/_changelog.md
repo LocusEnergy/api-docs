@@ -1,10 +1,10 @@
 ## Changelog
 
-### 2018-05-31
+### 2018-06-07
 
 - `GHI_m` from `Irradiance Global Horizontal` to `VI - Irradiance Global Horizontal`
 - `GHIh_m` from `Insolation Global Horizontal` to `VI - Insolation Global Horizontal`
-- `GHIhp_m` from `Insolation Global Horizontal (prorated)` to `VI - Insolation Global Horizontal (prorated)``
+- `GHIhp_m` from `Insolation Global Horizontal (prorated)` to `VI - Insolation Global Horizontal (prorated)`
 
 ### 2018-03-13
 
